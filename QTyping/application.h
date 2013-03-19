@@ -2,6 +2,9 @@
 #define APPLICATION_H
 
 #include <QMainWindow>
+#include <QtGui>
+#include <QtCore>
+#include <QDebug>
 
 namespace Ui {
 class Application;
@@ -17,6 +20,8 @@ public:
     
 private:
     Ui::Application *ui;
+    QList<QString> words;
+    void loadWordList();
 };
 
 #endif // APPLICATION_H
